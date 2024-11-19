@@ -26,7 +26,7 @@ const DashBoardPage = () => {
   }, [])
 
   const handleChange = useCallback(async function (e) {
-    setFilter(e.target.value);
+    setFilter(e.target.value.trim());
     setLoader(pre => !pre);
     try {
       const res = await axios.get(`${config.serverUrl}/api/v1/user/bulk?filter=${filter}`, {

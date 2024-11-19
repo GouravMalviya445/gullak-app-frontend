@@ -48,8 +48,8 @@ const SendPage = React.memo(() => {
 
   return !transfer ? (
     <div className="h-screen w-screen bg-slate-200 flex items-center justify-center">
-      <div className="w-[320px] h-[50vh] rounded-xl shadow-xl flex flex-col justify-between bg-white px-9 p-4">
-        <Heading className={"font-bold font-sans text-center mt-6"} heading={"Send Money"} />
+      <div className="w-[320px] h-fit rounded-xl shadow-xl flex flex-col justify-between bg-white px-9 p-4 space-y-3">
+        <Heading className={"font-bold font-sans text-center mt-6 mb-5"} heading={"Send Money"} />
         <div className="mb-6">
           <div className="flex space-x-3 items-center">
             <span className='px-3 py-1 font-semibold text-lg text-white rounded-full bg-green-500'>{data.firstName.at(0)}</span>

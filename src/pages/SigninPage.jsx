@@ -58,7 +58,7 @@ const SigninPage = () => {
 
   return !loader ? (
     <div className='h-screen w-screen text-center flex justify-center items-center bg-gray-300'>
-      <div className='flex bg-white shadow-[5px_-2px_20px] shadow-black flex-col h-[60vh] rounded-xl w-[500px] p-10'>
+      <div className='flex bg-white h-fit shadow-[5px_-2px_20px] shadow-black flex-col rounded-xl w-[500px] p-10'>
         <Heading heading={"Sign in your Account"} className={"text-blue-700 text-center"} />
         <form onSubmit={handleSubmit} action="submit" className='grid grid-cols-1 mt-10'>
 

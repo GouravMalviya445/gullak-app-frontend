@@ -60,7 +60,7 @@ const SignupPage = () => {
 
     return !loader ? (
         <div className='h-screen w-screen text-center flex justify-center items-center bg-gray-300'>
-            <div className='flex bg-white shadow-[5px_-2px_20px] shadow-black flex-col h-[70vh] rounded-xl w-[600px] p-10'>
+            <div className='flex bg-white shadow-[5px_-2px_20px] shadow-black flex-col h-[70vh] h-fit rounded-xl w-[600px] p-10'>
                 <Heading heading={"Create new Account"} className={"text-blue-700 text-center"} />
                 <form onSubmit={handleSubmit} action="submit" className='grid grid-cols-2 mt-9 space-y-5'>
 
